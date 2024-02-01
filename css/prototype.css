@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+
+:root {
+    --primary   : #000000;
+    --primary-90: #1a1a1a;
+    --primary-85: #262626;
+    --primary-80: #333333;
+    --primary-75: #404040;
+    --primary-65: #595959;
+    --primary-60: #666666;
+    --primary-55: #737373;
+    --primary-50: #808080;
+    --primary-45: #8C8C8C;
+    --primary-40: #999999;
+    --primary-35: #A6A6A6;
+    --primary-30: #B3B3B3;
+    --primary-25: #BFBFBF;
+    --primary-20: #CCCCCC;
+    --primary-15: #D9D9D9;
+    --primary-10: #E6E6E6;
+    --primary-5 : #F2F2F2;
+
+
+    --grayscale   : #e9ebf0;
+    --grayscale-90: #EBEDF2;
+    --grayscale-80: #EDEFF3;
+    --grayscale-70: #F0F1F5;
+    --grayscale-60: #F2F3F6;
+    --grayscale-50: #F4F5F7;
+    --grayscale-40: #F6F7F9;
+    --grayscale-30: #F8F9FB;
+    --grayscale-20: #FBFBFC;
+    --grayscale-10: #FDFDFD;
+
+    --black : #000000;
+    --white : #FFFFFF;
+}
+
+.bold {font-weight: 700 !important;}
+.italic {font-style: italic !important;}
+
+.font-size-70 {font-size: 70px; line-height: 100%;}
+.font-size-60 {font-size: 60px; line-height: 100%;}
+.font-size-50 {font-size: 50px; line-height: 100%;}
+.font-size-40 {font-size: 40px; line-height: 110%;}
+.font-size-32 {font-size: 32px; line-height: 110%;}
+.font-size-28 {font-size: 28px; line-height: 110%;}
+.font-size-22 {font-size: 22px; line-height: 110%;}
+.font-size-20 {font-size: 20px; line-height: 110%;}
+.font-size-18 {font-size: 18px; line-height: 110%;}
+.font-size-16 {font-size: 18px; line-height: 140%;}
+.font-size-14 {font-size: 14px; line-height: 140%;}
+.font-size-12 {font-size: 12px; line-height: 140%;}
+
+
+.color-primary-80 {color: var(--primary-80);}
+
+
+
+
+
+/* heading, contents title */
+.title-h1 {font-size: 50px; line-height: 100%; font-weight: bold;}
+.title-h2 {font-size: 44px; line-height: 100%; font-weight: bold;}
+.title-h3 {font-size: 40px; line-height: 100%; font-weight: bold;}
+
+.title-01 {font-size: 32px; line-height: 110%}
+.title-02 {font-size: 26px; line-height: 110%}
+.title-03 {font-size: 20px; line-height: 110%}
+.title-04 {font-size: 18px; line-height: 110%}
+
+
+.prototype-intro-info .caption-area .list-item .text {display: inline-block; font-size: 16px; line-height: 140%; color: var(--primary-80);}
+.prototype-intro-info .caption-area .list-item .text::before {content:"-"; display: inline-flex; margin-right: 5px;}
+
+.code-preview table {width: 1100px;}
+.code-preview table tr td:last-child {display: none;}

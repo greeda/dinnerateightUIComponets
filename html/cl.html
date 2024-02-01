@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/component.css">
+    <style>
+        header .project-title-info .title-h1 {text-align: center; border-bottom: 1px solid black;}
+        .main {display: flex;}
+        .main aside {max-width: 400px; width: 100%;}
+        .main .container {width: 100%; height: 100%; flex-grow: 1;}
+        .main .container .iframe-info {width: 100%; height: 100vh;}
+        .main .container .iframe-info iframe {width: 100%; height: 100%;}
+
+        .component-menu-info .list-item {display: flex;}
+        .component-menu-info .list-item a {padding: 15px 20px;}
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="project-title-info">
+                <h1 class="title-h1">XXXX Project</h1>
+            </div>
+        </header>
+        <main class="main">
+            <aside class="component-menu-info">
+                <ul class="component-menu-list">
+                    <li class="list-item">
+                        <a class="font-size-16" href="./components/BrandAsset.html">Brand Asset</a>
+                    </li>
+                    <li class="list-item">
+                        <a class="font-size-16" href="./components/Typography.html">Typography</a>
+                    </li>
+                    <li class="list-item">
+                        <a class="font-size-16" href="#">Color</a>
+                    </li>
+                    <li class="list-item">
+                        <a class="font-size-16" href="#">Icon</a>
+                    </li>
+                    <li class="list-item">
+                        <a class="font-size-16" href="#">Pagination</a>
+                    </li>
+                    <li class="list-item">
+                        <a class="font-size-16" href="#">Button</a>
+                    </li>
+                    <li class="list-item">
+                        <a class="font-size-16" href="#">Tags</a>
+                    </li>
+                    <li class="list-item">
+                        <a class="font-size-16" href="#">Input</a>
+                    </li>
+                    <li class="list-item">
+                        <a class="font-size-16" href="#">Text Area</a>
+                    </li>
+                    <li class="list-item">
+                        <a class="font-size-16" href="#">Radio Button</a>
+                    </li>
+                    <li class="list-item">
+                        <a class="font-size-16" href="#">Check Box</a>
+                    </li>
+                    <li class="list-item">
+                        <a class="font-size-16" href="#">Drop Down</a>
+                    </li>
+                    <li class="list-item">
+                        <a class="font-size-16" href="#">Quantity</a>
+                    </li>
+                    <li class="list-item">
+                        <a class="font-size-16" href="#">DatePicker</a>
+                    </li>
+                    <li class="list-item">
+                        <a class="font-size-16" href="../html/components/Accordion.html">Accordion</a>
+                    </li>
+                    <li class="list-item">
+                        <a class="font-size-16" href="#">Slider</a>
+                    </li>
+                    <li class="list-item">
+                        <a class="font-size-16" href="#">List Style</a>
+                    </li>
+                    <li class="list-item">
+                        <a class="font-size-16" href="#">LayerPopup</a>
+                    </li>
+                    <li class="list-item">
+                        <a class="font-size-16" href="#">Tab</a>
+                    </li>
+                    <li class="list-item">
+                        <a class="font-size-16" href="#">Table</a>
+                    </li>
+                </ul>
+            </aside>
+            <div class="container">
+                <div class="inner">
+                    <div class="iframe-info">
+                        <iframe src="./components/BrandAsset.html" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer id="footer"></footer>
+    </div>
+
+    <script>
+        window.addEventListener('load', () => {
+           init();
+        });
+
+        function init() {
+            const pageURLList = document.querySelectorAll('.component-menu-info a');
+            const container = document.querySelector('.iframe-info iframe');
+
+            pageURLList.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+
+                    container.setAttribute('src', e.currentTarget.getAttribute('href'));
+                })
+            })
+        }
+    </script>
+</body>
+</html>

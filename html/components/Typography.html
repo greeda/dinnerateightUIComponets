@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/prototype.css">
+    <title>Title</title>
+
+    <style>
+        /*.preview-info {display: flex; justify-content: center;}*/
+        .preview-info ul {display: flex; flex-wrap: wrap; max-width: 1100px; padding: 20px 0; justify-content: center; align-items: center; gap: 10px;}
+        .preview-info ul li {flex: 1 0 calc(33.33% - 10px);}
+        .preview-info ul li .box {display: flex; width: 100%; height: 100px; background-color: var(--grayscale-80); justify-content: center; align-items: center;}
+        .preview-info ul li .caption {color: var(--primary-60);}
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <header id="header">
+        <h1 class="title-h1">
+            Typography
+        </h1>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="inner">
+                <div class="prototype-intro-info">
+                    <strong class="text font-size-28">타이틀 정의</strong>
+                    <ol class="caption-area">
+                        <li class="list-item">
+                            <span class="text">보통의 경우 font-family 속성을 쓰지 않는다.</span>
+                        </li>
+                        <li class="list-item">
+                            <span class="text">타이틀 태그 안에서 다른 종류의 폰트가 추가 될 경우 자식요소의 태그를 추가한다.</span>
+                        </li>
+                        <li class="list-item">
+                            <span class="text">자식요소 태그에 스타일링은 상속받아 사용하지 않고 클래스를 추가한다.</span>
+                        </li>
+                        <li class="list-item">
+                            <span class="text">.title-h1~3 은 기본 볼드체 적용되어 있으며, 볼드체는 .bold 클래스를 추가하여 사용한다.</span>
+                        </li>
+                        <li class="list-item">
+                            <span class="text">별도의 line-height, letter-spacing을 설정하지 않고 사용한다.</span>
+                        </li>
+                    </ol>
+
+                    <div class="preview-info">
+                        <ul>
+                            <li>
+                                <div class="box">
+                                    <h1 class="title-h1">h1 title</h1>
+                                </div>
+                                <span class="caption font-size-14">Bold</span>
+                            </li>
+                            <li>
+                                <div class="box">
+                                    <h2 class="title-h2">h2 title</h2>
+                                </div>
+                                <span class="caption font-size-14">Bold</span>
+                            </li>
+                            <li>
+                                <div class="box">
+                                    <h3 class="title-h3">h3 title</h3>
+                                </div>
+                                <span class="caption font-size-14">Bold</span>
+                            </li>
+
+                            <li>
+                                <div class="box">
+                                    <p class="title-01">본문 텍스트..</p>
+                                </div>
+                                <span class="caption font-size-14">Regular</span>
+                            </li>
+                            <li>
+                                <div class="box">
+                                    <p class="title-02">본문 텍스트..</p>
+                                </div>
+                                <span class="caption font-size-14">Regular</span>
+                            </li>
+                            <li>
+                                <div class="box">
+                                    <p class="title-03">본문 텍스트..</p>
+                                </div>
+                                <span class="caption font-size-14">Regular</span>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <pre class="code-preview">
+                    <div class="colorscripter-code font-size-14" style="color:#010101;font-family: !important; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#fafafa;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#010101;font-family: !important;line-height:"><div style="padding:0 6px; white-space:pre; line-height:"><span style="color:#010101">&lt;</span><span style="color:#066de2">h1</span>&nbsp;<span style="color:#0a9989">class</span>=<span style="color:#df5000">"title-h1"</span><span style="color:#0a9989"></span><span style="color:#010101">&gt;</span>heading..<span style="color:#010101">&lt;</span><span style="color:#010101">/</span><span style="color:#066de2">h1</span><span style="color:#010101">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:"><span style="color:#010101">&lt;</span><span style="color:#066de2">h2</span>&nbsp;<span style="color:#0a9989">class</span>=<span style="color:#df5000">"title-h2"</span><span style="color:#0a9989"></span><span style="color:#010101">&gt;</span>heading...<span style="color:#010101">&lt;</span><span style="color:#010101">/</span><span style="color:#066de2">h2</span><span style="color:#010101">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:"><span style="color:#010101">&lt;</span><span style="color:#066de2">h3</span>&nbsp;<span style="color:#0a9989">class</span>=<span style="color:#df5000">"title-h3"</span><span style="color:#0a9989"></span><span style="color:#010101">&gt;</span>heading....<span style="color:#010101">&lt;</span><span style="color:#010101">/</span><span style="color:#066de2">h3</span><span style="color:#010101">&gt;</span></div></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none;color:white"><span style="font-size:9px;word-break:normal;background-color:#e5e5e5;color:white;border-radius:10px;padding:1px">cs</span></a></td></tr></table></div>
+                </pre>
+            </div>
+        </div>
+    </main>
+    <div id="footer"></div>
+</div>
+</body>
+</html>

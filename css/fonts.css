@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-weight: 100;
+    src: local('Noto Sans KR'),
+    url('../fonts/NotoSans-Thin.woff2') format('woff2'),
+    url('../fonts/NotoSans-Thin.woff') format('woff'),
+    url('../fonts/NotoSans-Thin.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-weight: 300;
+    src: local('Noto Sans KR'),
+    url('../fonts/NotoSans-Light.woff2') format('woff2'),
+    url('../fonts/NotoSans-Light.woff') format('woff'),
+    url('../fonts/NotoSans-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-weight: 400;
+    src: local('Noto Sans KR'),
+    url('../fonts/NotoSans-Regular.woff2') format('woff2'),
+    url('../fonts/NotoSans-Regular.woff') format('woff'),
+    url('../fonts/NotoSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-weight: 500;
+    src: local('Noto Sans KR'),
+    url('../fonts/NotoSans-Medium.woff2') format('woff2'),
+    url('../fonts/NotoSans-Medium.woff') format('woff'),
+    url('../fonts/NotoSans-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-weight: 700;
+    src: local('Noto Sans KR'),
+    url('../fonts/NotoSans-Bold.woff2') format('woff2'),
+    url('../fonts/NotoSans-Bold.woff') format('woff'),
+    url('../fonts/NotoSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Jam Grotesque';
+    font-weight: 200;
+    src: local('Jam Grotesque'),
+    url('../fonts/JamGrotesque-ExtraLight.otf.otf') format('opentype'),
+}
+
+@font-face {
+    font-family: 'Jam Grotesque';
+    font-weight: 200;
+    font-style: italic;
+    src: local('Jam Grotesque'),
+    url('../fonts/JamGrotesque-ExtraLightItalic.otf') format('opentype'),
+}
+
+@font-face {
+    font-family: 'Jam Grotesque';
+    font-weight: 300;
+    src: local('Jam Grotesque'),
+    url('../fonts/JamGrotesque-Light.otf') format('opentype'),
+}
+
+@font-face {
+    font-family: 'Jam Grotesque';
+    font-weight: 300;
+    font-style: italic;
+    src: local('Jam Grotesque'),
+    url('../fonts/JamGrotesque-LightItalic.otf') format('opentype'),
+}
+
+@font-face {
+    font-family: 'Jam Grotesque';
+    font-weight: 400;
+    src: local('Jam Grotesque'),
+    url('../fonts/JamGrotesque-Regular.otf') format('opentype'),
+}
+
+@font-face {
+    font-family: 'Jam Grotesque';
+    font-weight: 500;
+    src: local('Jam Grotesque'),
+    url('../fonts/JamGrotesque-Medium.otf') format('opentype'),
+}
+
+@font-face {
+    font-family: 'Jam Grotesque';
+    font-weight: 500;
+    font-style: italic;
+    src: local('Jam Grotesque'),
+    url('../fonts/JamGrotesque-MediumItalic.otf') format('opentype'),
+}
+
+@font-face {
+    font-family: 'Jam Grotesque';
+    font-weight: 700;
+    src: local('Jam Grotesque'),
+    url('../fonts/JamGrotesque-Medium.otf') format('opentype'),
+}
+
+@font-face {
+    font-family: 'Jam Grotesque';
+    font-weight: 700;
+    font-style: italic;
+    src: local('Jam Grotesque'),
+    url('../fonts/JamGrotesque-MediumItalic.otf') format('opentype'),
+}
+
+@font-face {
+    font-family: 'Jam Grotesque';
+    font-weight: 900;
+    src: local('Jam Grotesque'),
+    url('../fonts/JamGrotesque-Black.otf') format('opentype'),
+}
+
+@font-face {
+    font-family: 'Jam Grotesque';
+    font-weight: 900;
+    font-style: italic;
+    src: local('Jam Grotesque'),
+    url('../fonts/JamGrotesque-BlackItalic.otf') format('opentype'),
+}
