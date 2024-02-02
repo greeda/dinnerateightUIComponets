@@ -16,14 +16,12 @@
 
     <style>
         /*.preview-info {display: flex; justify-content: center;}*/
-        .preview-info ul {display: flex; flex-wrap: wrap; max-width: 1100px; padding: 20px 0; justify-content: center; align-items: center; gap: 10px;}
-        .preview-info ul li {flex: 1 0 calc(33.33% - 10px);}
-        .preview-info ul li .box {display: flex; width: 100%; height: 100px; background-color: var(--grayscale-80); justify-content: center; align-items: center;}
-        .preview-info ul li .caption {color: var(--primary-60);}
+
+
     </style>
 </head>
 <body>
-<div id="wrap">
+<div id="wrap" class="prototype">
     <header id="header">
         <h1 class="title-h1">
             Typography
@@ -33,10 +31,10 @@
         <div class="container">
             <div class="inner">
                 <div class="prototype-intro-info">
-                    <strong class="text font-size-28">타이틀 정의</strong>
+                    <strong class="text text-t3">폰트 정의</strong>
                     <ol class="caption-area">
                         <li class="list-item">
-                            <span class="text">보통의 경우 font-family 속성을 쓰지 않는다.</span>
+                            <span class="text">기본 폰트 사이즈는 10px으로 설정되어 있다. 보통의 경우 font-family 속성을 쓰지 않는다.</span>
                         </li>
                         <li class="list-item">
                             <span class="text">타이틀 태그 안에서 다른 종류의 폰트가 추가 될 경우 자식요소의 태그를 추가한다.</span>
@@ -45,7 +43,7 @@
                             <span class="text">자식요소 태그에 스타일링은 상속받아 사용하지 않고 클래스를 추가한다.</span>
                         </li>
                         <li class="list-item">
-                            <span class="text">.title-h1~3 은 기본 볼드체 적용되어 있으며, 볼드체는 .bold 클래스를 추가하여 사용한다.</span>
+                            <span class="text">볼드체와 이텔릭체는 클래스를 추가하여 사용한다. ex) .bold .italic</span>
                         </li>
                         <li class="list-item">
                             <span class="text">별도의 line-height, letter-spacing을 설정하지 않고 사용한다.</span>
@@ -53,50 +51,105 @@
                     </ol>
 
                     <div class="preview-info">
-                        <ul>
+                        <ul class="typo-preview-area">
                             <li>
                                 <div class="box">
-                                    <h1 class="title-h1">h1 title</h1>
+                                    <p class="title-h1">h1 title</p>
                                 </div>
-                                <span class="caption font-size-14">Bold</span>
+                                <span class="caption text-b3">Bold</span>
                             </li>
                             <li>
                                 <div class="box">
-                                    <h2 class="title-h2">h2 title</h2>
+                                    <p class="title-h2">h2 title</p>
                                 </div>
-                                <span class="caption font-size-14">Bold</span>
+                                <span class="caption text-b3">Bold</span>
                             </li>
                             <li>
                                 <div class="box">
-                                    <h3 class="title-h3">h3 title</h3>
+                                    <p class="title-h3">h3 title</p>
                                 </div>
-                                <span class="caption font-size-14">Bold</span>
+                                <span class="caption text-b3">Bold</span>
                             </li>
 
                             <li>
                                 <div class="box">
                                     <p class="title-01">본문 텍스트..</p>
                                 </div>
-                                <span class="caption font-size-14">Regular</span>
+                                <span class="caption text-b3">Regular</span>
                             </li>
                             <li>
                                 <div class="box">
                                     <p class="title-02">본문 텍스트..</p>
                                 </div>
-                                <span class="caption font-size-14">Regular</span>
+                                <span class="caption text-b3">Regular</span>
                             </li>
                             <li>
                                 <div class="box">
                                     <p class="title-03">본문 텍스트..</p>
                                 </div>
-                                <span class="caption font-size-14">Regular</span>
+                                <span class="caption text-b3">Regular</span>
                             </li>
 
                         </ul>
                     </div>
+
+                    <div class="preview-info">
+                        <ol class="typo-ol-area">
+                            <li>
+                                <strong class="text-h1">text-h1</strong>
+                                <p class="text-b2">font-size: 70px, line-height: 100%</p>
+                            </li>
+                            <li>
+                                <strong class="text-h2">text-h2</strong>
+                                <p class="text-b2">font-size: 60px, line-height: 100%</p>
+                            </li>
+                            <li>
+                                <strong class="text-h3">text-h3</strong>
+                                <p class="text-b2">font-size: 50px, line-height: 100%</p>
+                            </li>
+                            <li>
+                                <strong class="text-t1">text-t1</strong>
+                                <p class="text-b2">font-size: 40px, line-height: 110%</p>
+                            </li>
+                            <li>
+                                <strong class="text-t2">text-t2</strong>
+                                <p class="text-b2">font-size: 34px, line-height: 110%</p>
+                            </li>
+                            <li>
+                                <strong class="text-t3">text-t3</strong>
+                                <p class="text-b2">font-size: 28px, line-height: 110%</p>
+                            </li>
+                            <li>
+                                <strong class="text-t4">text-t4</strong>
+                                <p class="text-b2">font-size: 22px, line-height: 110%</p>
+                            </li>
+                            <li>
+                                <strong class="text-t5">text-t5</strong>
+                                <p class="text-b2">font-size: 20px, line-height: 110%</p>
+                            </li>
+                            <li>
+                                <strong class="text-b1">text-b1</strong>
+                                <p class="text-b2">font-size: 18px, line-height: 140%</p>
+                            </li>
+                            <li>
+                                <strong class="text-b2">text-b2</strong>
+                                <p class="text-b2">font-size: 16px, line-height: 140%</p>
+                            </li>
+                            <li>
+                                <strong class="text-b3">text-b3</strong>
+                                <p class="text-b2">font-size: 14px, line-height: 140%</p>
+                            </li>
+                            <li>
+                                <strong class="text-c1">text-c1</strong>
+                                <p class="text-b2">font-size: 12px, line-height: 140%</p>
+                            </li>
+
+                        </ol>
+                    </div>
                 </div>
                 <pre class="code-preview">
-                    <div class="colorscripter-code font-size-14" style="color:#010101;font-family: !important; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#fafafa;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#010101;font-family: !important;line-height:"><div style="padding:0 6px; white-space:pre; line-height:"><span style="color:#010101">&lt;</span><span style="color:#066de2">h1</span>&nbsp;<span style="color:#0a9989">class</span>=<span style="color:#df5000">"title-h1"</span><span style="color:#0a9989"></span><span style="color:#010101">&gt;</span>heading..<span style="color:#010101">&lt;</span><span style="color:#010101">/</span><span style="color:#066de2">h1</span><span style="color:#010101">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:"><span style="color:#010101">&lt;</span><span style="color:#066de2">h2</span>&nbsp;<span style="color:#0a9989">class</span>=<span style="color:#df5000">"title-h2"</span><span style="color:#0a9989"></span><span style="color:#010101">&gt;</span>heading...<span style="color:#010101">&lt;</span><span style="color:#010101">/</span><span style="color:#066de2">h2</span><span style="color:#010101">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:"><span style="color:#010101">&lt;</span><span style="color:#066de2">h3</span>&nbsp;<span style="color:#0a9989">class</span>=<span style="color:#df5000">"title-h3"</span><span style="color:#0a9989"></span><span style="color:#010101">&gt;</span>heading....<span style="color:#010101">&lt;</span><span style="color:#010101">/</span><span style="color:#066de2">h3</span><span style="color:#010101">&gt;</span></div></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none;color:white"><span style="font-size:9px;word-break:normal;background-color:#e5e5e5;color:white;border-radius:10px;padding:1px">cs</span></a></td></tr></table></div>
+                    <strong class="code text-b1">HTML Code</strong>
+                    <div class="colorscripter-code text-b2" style="color:#010101;font-family: !important; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#fafafa;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#010101;font-family: !important;line-height:"><div style="padding:0 6px; white-space:pre; line-height:"><span style="color:#010101">&lt;</span><span style="color:#066de2">div</span>&nbsp;<span style="color:#0a9989">class</span>=<span style="color:#df5000">"text-h1"</span><span style="color:#0a9989"></span><span style="color:#010101">&gt;</span>text-h1<span style="color:#010101">&lt;</span><span style="color:#010101">/</span><span style="color:#066de2">div</span><span style="color:#010101">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:"><span style="color:#010101">&lt;</span><span style="color:#066de2">div</span>&nbsp;<span style="color:#0a9989">class</span>=<span style="color:#df5000">"text-h2"</span><span style="color:#0a9989"></span><span style="color:#010101">&gt;</span>text-h2<span style="color:#010101">&lt;</span><span style="color:#010101">/</span><span style="color:#066de2">div</span><span style="color:#010101">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:"><span style="color:#010101">&lt;</span><span style="color:#066de2">div</span>&nbsp;<span style="color:#0a9989">class</span>=<span style="color:#df5000">"text-h3"</span><span style="color:#0a9989"></span><span style="color:#010101">&gt;</span>text-h3<span style="color:#010101">&lt;</span><span style="color:#010101">/</span><span style="color:#066de2">div</span><span style="color:#010101">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:"><span style="color:#010101">&lt;</span><span style="color:#066de2">div</span>&nbsp;<span style="color:#0a9989">class</span>=<span style="color:#df5000">"text-t1"</span><span style="color:#0a9989"></span><span style="color:#010101">&gt;</span>text-t1<span style="color:#010101">&lt;</span><span style="color:#010101">/</span><span style="color:#066de2">div</span><span style="color:#010101">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:"><span style="color:#010101">&lt;</span><span style="color:#066de2">div</span>&nbsp;<span style="color:#0a9989">class</span>=<span style="color:#df5000">"text-t2"</span><span style="color:#0a9989"></span><span style="color:#010101">&gt;</span>text-t2<span style="color:#010101">&lt;</span><span style="color:#010101">/</span><span style="color:#066de2">div</span><span style="color:#010101">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:"><span style="color:#010101">&lt;</span><span style="color:#066de2">div</span>&nbsp;<span style="color:#0a9989">class</span>=<span style="color:#df5000">"text-t3"</span><span style="color:#0a9989"></span><span style="color:#010101">&gt;</span>text-t3<span style="color:#010101">&lt;</span><span style="color:#010101">/</span><span style="color:#066de2">div</span><span style="color:#010101">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:"><span style="color:#010101">&lt;</span><span style="color:#066de2">div</span>&nbsp;<span style="color:#0a9989">class</span>=<span style="color:#df5000">"text-t4"</span><span style="color:#0a9989"></span><span style="color:#010101">&gt;</span>text-t4<span style="color:#010101">&lt;</span><span style="color:#010101">/</span><span style="color:#066de2">div</span><span style="color:#010101">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:"><span style="color:#010101">&lt;</span><span style="color:#066de2">div</span>&nbsp;<span style="color:#0a9989">class</span>=<span style="color:#df5000">"text-t5"</span><span style="color:#0a9989"></span><span style="color:#010101">&gt;</span>text-t5<span style="color:#010101">&lt;</span><span style="color:#010101">/</span><span style="color:#066de2">div</span><span style="color:#010101">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:"><span style="color:#010101">&lt;</span><span style="color:#066de2">div</span>&nbsp;<span style="color:#0a9989">class</span>=<span style="color:#df5000">"text-b1"</span><span style="color:#0a9989"></span><span style="color:#010101">&gt;</span>text-b1<span style="color:#010101">&lt;</span><span style="color:#010101">/</span><span style="color:#066de2">div</span><span style="color:#010101">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:"><span style="color:#010101">&lt;</span><span style="color:#066de2">div</span>&nbsp;<span style="color:#0a9989">class</span>=<span style="color:#df5000">"text-b2"</span><span style="color:#0a9989"></span><span style="color:#010101">&gt;</span>text-b2<span style="color:#010101">&lt;</span><span style="color:#010101">/</span><span style="color:#066de2">div</span><span style="color:#010101">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:"><span style="color:#010101">&lt;</span><span style="color:#066de2">div</span>&nbsp;<span style="color:#0a9989">class</span>=<span style="color:#df5000">"text-b3"</span><span style="color:#0a9989"></span><span style="color:#010101">&gt;</span>text-b3<span style="color:#010101">&lt;</span><span style="color:#010101">/</span><span style="color:#066de2">div</span><span style="color:#010101">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:"><span style="color:#010101">&lt;</span><span style="color:#066de2">div</span>&nbsp;<span style="color:#0a9989">class</span>=<span style="color:#df5000">"text-c1"</span><span style="color:#0a9989"></span><span style="color:#010101">&gt;</span>text-c1<span style="color:#010101">&lt;</span><span style="color:#010101">/</span><span style="color:#066de2">div</span><span style="color:#010101">&gt;</span></div></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none;color:white"><span style="font-size:9px;word-break:normal;background-color:#e5e5e5;color:white;border-radius:10px;padding:1px">cs</span></a></td></tr></table></div>
                 </pre>
             </div>
         </div>
